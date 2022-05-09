@@ -12,7 +12,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="130dp"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="60dp"
         android:text="浏览网页" />
+    <com.example.homework1.myview.CircularView
+        android:id="@+id/cirview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="200dp"
+        app:textContent="testing"
+        app:textColor="@color/black"
+        app:textSize="10sp"
+        app:circleColor="@color/teal_200"/>
+
 
 </LinearLayout>

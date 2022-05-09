@@ -3,12 +3,14 @@ package com.example.homework1.activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.homework1.R;
 import com.example.homework1.msgType.MessageEvent;
@@ -24,13 +26,18 @@ public class WebActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
         EventBus.getDefault().register(this);
+        //back按钮
         Button button=(Button) findViewById(R.id.back);
+        Drawable drawable=(Drawable) getResources().getDrawable(R.drawable.back_button_background);
+        drawable.setBounds(0,0,180,80);
+        button.setCompoundDrawables(drawable,null,null,null);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 EventBus.getDefault().post(new MessageEvent("back"));
             }
         });
+        //web视图
         WebView webView =(WebView) findViewById(R.id.web_view);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient(){

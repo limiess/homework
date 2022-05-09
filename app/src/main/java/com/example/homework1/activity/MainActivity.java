@@ -8,6 +8,11 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.homework1.R;
+import com.example.homework1.msgType.MessageEvent;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,4 +29,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }
