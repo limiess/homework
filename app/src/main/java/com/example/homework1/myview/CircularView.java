@@ -3,6 +3,7 @@ package com.example.homework1.myview;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
@@ -44,7 +45,7 @@ public class CircularView extends View {
              paintCircle.setAntiAlias(true);
              paintCircle.setColor(circleColor);
              paintCircle.setStyle(Paint.Style.STROKE);
-             paintCircle.setStrokeWidth(3);
+             paintCircle.setStrokeWidth(4);
         } finally {
             a.recycle();
         }
@@ -78,8 +79,9 @@ public class CircularView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        canvas.drawColor(Color.parseColor("#88880000"));
         canvas.drawText(textContent, 150,  210, paintText);
-        canvas.drawCircle(200, 200,Math.min(defaultHeight,defaultWidth)/2, paintCircle);
+        canvas.drawCircle(200, 200,(Math.min(defaultHeight,defaultWidth)-4)/2, paintCircle);
         canvas.drawCircle(200, 200,Math.min(defaultHeight,defaultWidth)/4, paintCircle);
     }
 
