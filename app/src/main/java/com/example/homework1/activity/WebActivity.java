@@ -43,7 +43,6 @@ public class WebActivity extends AppCompatActivity {
         Uri uri = Uri.parse("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fku.90sjimg.com%2Felement_origin_min_pic%2F00%2F92%2F85%2F4456f23be8baf9c.jpg&refer=http%3A%2F%2Fku.90sjimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1654845717&t=0655a01b4e1835b4763f8ebcc5b4aa2e");
         SimpleDraweeView backView = (SimpleDraweeView) findViewById(R.id.back_view);
         backView.setImageURI(uri);
-
         //web视图
         WebView webView =(WebView) findViewById(R.id.web_view);
         webView.getSettings().setJavaScriptEnabled(true);

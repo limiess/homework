@@ -18,6 +18,7 @@
         android:layout_height="35dp"
         android:layout_marginStart="0dp"
         android:layout_marginTop="-35dp"
+        fresco:actualImageScaleType="centerCrop"
         fresco:placeholderImage="@mipmap/place_img"/>
     <WebView
         android:id="@+id/web_view"

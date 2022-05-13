@@ -23,6 +23,13 @@
         android:layout_marginTop="-45dp"
         fresco:placeholderImage="@mipmap/place_img"
         />
+    <Button
+        android:id="@+id/buttonfm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="90dp"
+        android:text="帧测试"/>
     <com.example.homework1.myview.CircularView
         android:id="@+id/cirview"
         android:layout_width="wrap_content"

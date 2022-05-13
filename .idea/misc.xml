@@ -5,8 +5,11 @@
       <map>
         <entry key="..\:/Android/AndroidStudioProjects/Homework1/app/src/main/res/drawable/back_button_background.xml" value="0.2265" />
         <entry key="..\:/Android/AndroidStudioProjects/Homework1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/Android/AndroidStudioProjects/Homework1/app/src/main/res/layout/activity_fragment_test.xml" value="0.25364583333333335" />
         <entry key="..\:/Android/AndroidStudioProjects/Homework1/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
         <entry key="..\:/Android/AndroidStudioProjects/Homework1/app/src/main/res/layout/activity_web.xml" value="0.25364583333333335" />
+        <entry key="..\:/Android/AndroidStudioProjects/Homework1/app/src/main/res/layout/fragment_add.xml" value="0.151268115942029" />
+        <entry key="..\:/Android/AndroidStudioProjects/Homework1/app/src/main/res/layout/fragment_display.xml" value="0.25364583333333335" />
       </map>
     </option>
   </component>
