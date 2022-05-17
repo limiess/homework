@@ -67,9 +67,9 @@ public class DisplayFragment extends Fragment {
         countVM=new ViewModelProvider(
                 requireActivity(),
                 new ViewModelProvider.NewInstanceFactory()).get(CountVM.class);
-        countVM.getSelectMusic().observe(getViewLifecycleOwner(), item -> {
+        countVM.getSelectC().observe(getViewLifecycleOwner(), item -> {
             TextView textView=(TextView) view.findViewById(R.id.show);
-            textView.setText("当前计数为："+item.getCurNum());
+            textView.setText("当前计数为："+item);
         });
         // Inflate the layout for this fragment
         return view;

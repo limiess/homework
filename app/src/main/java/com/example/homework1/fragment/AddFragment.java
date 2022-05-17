@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.homework1.R;
-import com.example.homework1.myutil.CountUtil;
+import com.example.homework1.myutil.CountBean;
 import com.example.homework1.viewmodel.CountVM;
 
 /**
@@ -31,6 +31,7 @@ public class AddFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    private  Integer te=0;
     private CountVM countVM;
     public AddFragment() {
         // Required empty public constructor
@@ -79,8 +80,8 @@ public class AddFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CountUtil.setNum(CountUtil.getNum()+1);
-                countVM.setSelectMusic(new CountUtil());
+                CountBean.setNum(CountBean.getNum()+1);
+                countVM.setSelectC(++te);
             }
         });
 
